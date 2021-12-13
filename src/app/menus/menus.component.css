@@ -1,0 +1,108 @@
+@media screen and (max-width: 800px) {
+    .menu-thumbnail {
+      display: none;
+    }
+  
+    .flex-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: #332f2d;
+      padding: 2.5%;
+    }
+  
+    h3 {
+      margin-top: 0;
+      font-weight: 400;
+    }
+  
+    .menu-list {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-self: center;
+      height: auto;
+      width: 50%;
+      height: auto;
+      font-size: 15px;
+      letter-spacing: 0.2em;
+      color: white;
+    }
+    .menu-dis {
+      display: none;
+    }
+  }
+  
+  @media screen and (min-width: 800px) {
+    .main-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .menu-thumbnail img {
+      display: block;
+      height: auto;
+      width: 100%;
+      max-width: 500px;
+    }
+  
+    .menu-thumbnail {
+      position: relative;
+      display: inline-block;
+      justify-content: center;
+    }
+    .caption {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      letter-spacing: 0.1em;
+    }
+    .menu-thumbnail a {
+      font-weight: 600;
+      font-size: 50px;
+      color: white;
+    }
+  
+    .flex-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background-color: #332f2d;
+    }
+  
+    h3 {
+      margin-top: 0;
+      font-weight: 600;
+    }
+    .menu-list {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      text-align: center;
+      align-self: center;
+      height: auto;
+      width: 50%;
+      height: auto;
+      font-size: 20px;
+      letter-spacing: 0.2em;
+      color: white;
+    }
+  }
+  
+  section {
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+  }
+  
+  ul {
+    padding-left: 0;
+  }
+  li {
+    list-style: none;
+    padding-bottom: 1.5%;
+  }
+  

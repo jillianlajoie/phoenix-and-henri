@@ -1,1 +1,104 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 800px) {
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  footer {
+    justify-content: space-evenly;
+  }
+}
+
+/* GLOBAL STYLES */
+
+body {
+  font-family: "Source Serif Pro", serif;
+  font-weight: 400;
+  margin: 0 5% 0 5%;
+}
+
+nav {
+  display: flex;
+  flex: row;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.nav-item {
+  font-family: "Raleway", sans-serif;
+  font-size: 28px;
+}
+
+section {
+  margin-bottom: 3%;
+}
+
+a {
+  text-decoration: none;
+  color: #707070;
+}
+
+h1 {
+  text-align: center;
+  font-size: 30px;
+  margin: 1%;
+}
+
+button {
+  background-color: #94bf83;
+  width: 150px;
+  height: 35px;
+  border: 1px solid #94bf83;
+  border-radius: 2px;
+  color: black;
+  font-family: "Source Serif Pro", sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+}
+/* navbar */
+
+.nav-cont {
+  display: flex;
+  justify-content: flex-end;
+  gap: 40px;
+}
+
+.brand-logo {
+  height: auto;
+  width: 100%;
+  max-width: 175px;
+  padding: 0;
+}
+
+/* footer */
+
+footer {
+  background-image: url("assets/images/chalkboardfooter.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Shadows Into Light Two", sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  color: white;
+  text-align: center;
+}

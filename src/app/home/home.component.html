@@ -1,0 +1,102 @@
+<!-- hero section -->
+<section id="hero-section">
+    <div class="flex-container">
+      <img
+        src="assets/images/rodlongunsplash.jpg"
+        class="img-responsive hero-image"
+        alt="Lively restaurant seating area."
+      />
+    </div>
+  </section>
+  
+  <!-- reservation bar -->
+  
+  <section id="reservation-bar">
+    <div class="res-border">
+      <h1>REQUEST A TABLE</h1>
+      <div class="res-container">
+        <div class="res-item">
+          <label for="name">Name:</label>
+  
+          <input type="text" id="name" name="name" required size="10" />
+        </div>
+        <div class="res-item">
+          <label for="email">Email:</label>
+  
+          <input
+            type="email"
+            id="email"
+            pattern=".+@globex\.com"
+            size="30"
+            required
+          />
+        </div>
+        <div class="res-item">
+          <label for="tentacles"># Guests:</label>
+  
+          <input type="number" id="tentacles" name="tentacles" min="1" max="10" />
+        </div>
+        <div class="res-item">
+          <label for="start">Date:</label>
+  
+          <input
+            type="date"
+            id="start"
+            name="trip-start"
+            value="2022-01-01"
+            min="2021-01-01"
+            max="2022-12-31"
+          />
+        </div>
+        <div class="res-item">
+          <label for="appt">Time</label>
+  
+          <input
+            type="time"
+            id="appt"
+            name="appt"
+            min="08:00"
+            max="15:00"
+            required
+          />
+        </div>
+  
+        <button class="res-item">Reserve</button>
+      </div>
+    </div>
+  </section>
+  
+  <!-- menu and contact links -->
+  <section id="menu-contact">
+    <div class="menu-contact-container">
+      <div class="thumbnail">
+        <img src="assets/images/pexelsmariaorlovagarden.jpg" alt="" />
+        <div class="caption">
+          <p>
+            <a
+              class="nav-item"
+              routerLink="/menus"
+              routerLinkActive="activebutton"
+              >MENUS</a
+            >
+          </p>
+        </div>
+      </div>
+  
+      <div class="thumbnail">
+        <img src="assets/images/pexelscottonbrocouple.jpg" alt="" />
+        <div class="caption">
+          <p>
+            <a
+              class="nav-item"
+              routerLink="/contact"
+              routerLinkActive="activebutton"
+              >CONTACT</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <router-outlet></router-outlet>
+  
