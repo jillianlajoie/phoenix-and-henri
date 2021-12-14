@@ -18,9 +18,8 @@ import { HomeComponent } from './home/home.component';
       { path: 'menus', component: MenusComponent },
       { path: 'contact', component: ContactComponent },
       {
-        path: '',
-        redirectTo: '/home',
-        pathMatch: 'full',
+        path: '/',
+        component: HomeComponent,
       },
     ]),
   ],
